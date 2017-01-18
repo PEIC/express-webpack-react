@@ -3,5 +3,5 @@ a very simple app starter
 * express
 * webpack
 * react 
-npm i
+npm i  
 npm run dev
