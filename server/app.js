@@ -28,4 +28,14 @@ app.get('/', function(req, res) {
     res.render('index')
 });
 
+app.get('/info', function(req, res) {
+    var { version, arch, platform } = process;
+    res.send({
+        version: version,
+        arch: arch,
+        platform: platform,
+        dirname: __dirname
+    });
+});
+
 app.listen('1024', () => {console.log('servering......')})
